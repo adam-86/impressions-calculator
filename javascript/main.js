@@ -31,9 +31,9 @@ function getResults() {
 
   //output results rounded to the nearest interger
   output.innerHTML = `
-      <span>Impressions per day:<strong> ${Math.round(outputDays)} </strong></span>
-      <span>Impressions per week:<strong> ${Math.round(outputWeeks)} </strong></span>
-      <span>Impressions per day:<strong> ${Math.round(outputMonths)} </strong></span>
+      <span>Impressions Per Day:<strong> ${Math.round(outputDays)} </strong></span>
+      <span>Impressions Per Week:<strong> ${Math.round(outputWeeks)} </strong></span>
+      <span>Impressions Per Month:<strong> ${Math.round(outputMonths)} </strong></span>
       `;
 
   clearInputs();
