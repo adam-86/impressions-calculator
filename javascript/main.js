@@ -23,7 +23,7 @@ function getResults() {
   } else if (perWeek != 0) {
     outputDays = perWeek / 7;
     outputWeeks = perWeek;
-    outputMonths = perWeek * 4;
+    outputMonths = perWeek * 52 / 12 * 4;
 
   } else if (perMonth != 0) {
     outputDays = perMonth / 30;
