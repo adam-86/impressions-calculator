@@ -18,15 +18,15 @@ function getResults() {
   if (perDay != 0) {
     outputDays = perDay;
     outputWeeks = perDay * 7;
-    outputMonths = perDay * 30;
+    outputMonths = perDay * 28;
 
   } else if (perWeek != 0) {
     outputDays = perWeek / 7;
     outputWeeks = perWeek;
-    outputMonths = perWeek * 52 / 12 * 4;
+    outputMonths = perWeek * 4;
 
   } else if (perMonth != 0) {
-    outputDays = perMonth / 30;
+    outputDays = perMonth / 28;
     outputWeeks = perMonth / 4;
     outputMonths = perMonth;
 
