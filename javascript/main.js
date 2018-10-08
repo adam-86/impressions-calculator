@@ -14,7 +14,8 @@ function getResults() {
     outputWeeks,
     outputMonths,
     outputCpm,
-    roundedCpm;
+    roundedCpm,
+    markup;
 
   if (perDay != 0) {
     outputDays = perDay;
@@ -34,6 +35,7 @@ function getResults() {
   } if(monthRate != 0) {
     outputCpm = monthRate / outputMonths * 1000;
     roundedCpm = Math.round(outputCpm * 100) / 100;
+    markup = (parseInt(monthRate) / 100 * 10 + parseInt(monthRate)) ;
   }
 
   //output results rounded to the nearest interger
@@ -41,7 +43,9 @@ function getResults() {
       <span>Impressions Per Day:<strong> ${Math.round(outputDays)} </strong></span>
       <span>Impressions Per Week:<strong> ${Math.round(outputWeeks)} </strong></span>
       <span>Impressions Per Month:<strong> ${Math.round(outputMonths)} </strong></span>
-      <span>CPM:<strong> $ ${(roundedCpm)} </strong></span>
+      <span>CPM:<strong> $${(roundedCpm)} </strong></span>
+      <span>Monthly Rate + 10%:<strong> $${Math.round(markup)} </strong></span>
+
       `;
 
   clearInputs();
