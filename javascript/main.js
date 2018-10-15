@@ -45,7 +45,7 @@ function getResults() {
       <span>Impressions Per Week:<strong> ${Math.round(outputWeeks)} </strong></span>
       <span>Impressions Per Month:<strong> ${Math.round(outputMonths)} </strong></span>
       <span>CPM:<strong> $${(roundedCpm)} </strong></span>
-      <span>Monthly Rate 10% Markup:<strong> $${Math.round(markup)} </strong></span>
+      <span>Monthly Rate 15% Markup:<strong> $${Math.round(markup)} </strong></span>
 
       `;
 
